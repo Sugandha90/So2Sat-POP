@@ -48,6 +48,6 @@ and population count) in separate CSV file for each city.
 Pixel size for tif file is: 10m by 10m
 
 data_preprocessing.py: For each city folder creates a city_name_features.csv file, which is used for training
-rf_classification.py: Random forest classification implementation
-rf_regression.py: Random forest regression implementation
+ <br /> rf_classification.py: Random forest classification implementation
+ <br /> rf_regression.py: Random forest regression implementation
 
