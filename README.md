@@ -44,3 +44,10 @@ test data folder contains 26 cities and each city folder has patches from sentin
 osm based features in Comma Separated Value (CSV) files (osm_features) and corresponding labels(population class 
 and population count) in separate CSV file for each city.
 ```
+
+Pixel size for tif file is: 10m by 10m
+
+data_preprocessing.py: For each city folder creates a city_name_features.csv file, which is used for training
+rf_classification.py: Random forest classification implementation
+rf_regression.py: Random forest regression implementation
+
