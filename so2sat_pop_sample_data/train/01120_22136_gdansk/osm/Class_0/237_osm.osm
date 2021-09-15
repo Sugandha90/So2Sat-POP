@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version="0.6" generator="osmium/1.10.0">
+  <node id="1898889275" version="3" timestamp="2013-04-08T22:13:18Z" uid="128186" user="malcolmh" changeset="15660196" lat="54.5341667" lon="18.664">
+    <tag k="seamark:buoy_safe_water:colour" v="red;white"/>
+    <tag k="seamark:buoy_safe_water:colour_pattern" v="vertical"/>
+    <tag k="seamark:buoy_safe_water:shape" v="pillar"/>
+    <tag k="seamark:light:character" v="Iso"/>
+    <tag k="seamark:light:colour" v="white"/>
+    <tag k="seamark:light:period" v="10"/>
+    <tag k="seamark:name" v="GD"/>
+    <tag k="seamark:radio_station:category" v="ais"/>
+    <tag k="seamark:topmark:colour" v="red"/>
+    <tag k="seamark:topmark:shape" v="sphere"/>
+    <tag k="seamark:type" v="buoy_safe_water"/>
+  </node>
+  <node id="1898889276" version="3" timestamp="2013-04-08T22:13:18Z" uid="128186" user="malcolmh" changeset="15660196" lat="54.465" lon="18.7008333">
+    <tag k="seamark:buoy_safe_water:colour" v="red;white"/>
+    <tag k="seamark:buoy_safe_water:colour_pattern" v="vertical"/>
+    <tag k="seamark:buoy_safe_water:shape" v="pillar"/>
+    <tag k="seamark:light:character" v="Mo"/>
+    <tag k="seamark:light:colour" v="white"/>
+    <tag k="seamark:light:group" v="A"/>
+    <tag k="seamark:light:period" v="10"/>
+    <tag k="seamark:name" v="NP"/>
+    <tag k="seamark:radio_station:category" v="ais"/>
+    <tag k="seamark:topmark:colour" v="red"/>
+    <tag k="seamark:topmark:shape" v="sphere"/>
+    <tag k="seamark:type" v="buoy_safe_water"/>
+  </node>
+  <way id="179502368" version="3" timestamp="2012-09-13T23:41:14Z" uid="467703" user="Zibior2" changeset="13102209">
+    <nd ref="1898889275"/>
+    <nd ref="1898889276"/>
+    <tag k="seamark:type" v="separation_boundary"/>
+  </way>
+  <relation id="2521518" version="1" timestamp="2012-10-23T09:10:13Z" uid="53936" user="elsaxo" changeset="13602824">
+    <member type="way" ref="179502379" role=""/>
+    <member type="way" ref="179502376" role=""/>
+    <member type="way" ref="179502374" role=""/>
+    <member type="way" ref="179502371" role=""/>
+    <member type="way" ref="179502370" role=""/>
+    <member type="way" ref="179502373" role=""/>
+    <member type="way" ref="179502382" role=""/>
+    <member type="way" ref="179502388" role=""/>
+    <member type="way" ref="179502384" role=""/>
+    <member type="way" ref="179502383" role=""/>
+    <member type="way" ref="179502385" role=""/>
+    <member type="way" ref="179502381" role=""/>
+    <member type="way" ref="179502365" role=""/>
+    <member type="way" ref="179502362" role=""/>
+    <member type="way" ref="179502390" role=""/>
+    <member type="way" ref="179502358" role=""/>
+    <member type="way" ref="179502354" role=""/>
+    <member type="way" ref="179502361" role=""/>
+    <member type="way" ref="179502351" role=""/>
+    <member type="way" ref="179502352" role=""/>
+    <member type="way" ref="179502367" role=""/>
+    <member type="way" ref="179502356" role=""/>
+    <member type="way" ref="179502359" role=""/>
+    <member type="way" ref="179502364" role=""/>
+    <member type="way" ref="179502355" role=""/>
+    <member type="way" ref="179502378" role=""/>
+    <member type="way" ref="179502368" role=""/>
+    <member type="way" ref="179582892" role=""/>
+    <member type="way" ref="179582891" role=""/>
+    <member type="way" ref="179582893" role=""/>
+    <member type="way" ref="179582894" role=""/>
+    <tag k="name" v="On the approaches to the Polish ports in the Gulf of Gdańsk"/>
+    <tag k="type" v="traffic separation scheme"/>
+  </relation>
+</osm>
