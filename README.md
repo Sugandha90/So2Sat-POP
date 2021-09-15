@@ -3,6 +3,8 @@
 ## Visualization of the sample patches
 ![Upto_class13_patch_new](https://user-images.githubusercontent.com/61827990/133273367-bc32ea0c-0164-4aa1-bd21-62d2dc3fcaba.PNG)
 
+Sample patches from the odd numbered classes of our dataset. Lower classes depicts sparsely populated areas while higher classes depicts densely populated areas.
+
 > This figure is cited from the following paper
 
 ## Paper
@@ -22,8 +24,7 @@ DOI
 [Signal Processing in Earth Observation](https://www.asg.ed.tum.de/sipeo/home/) , Technical University of Munich, and Remote Sensing Technology Institute, German Aerospace Center.
 
 ## Funding
-This work is funded by European Research Council starting Grant:
-ERC-2016-StG-714087 (Acronym:  So2Sat, project website:  www.so2sat.eu)
+This research was funded by the European Research Council (ERC) under the European Unions Horizon 2020 research and innovation program with the grant number ERC-2016-StG-714087 (Acronym:  So2Sat, project website:  www.so2sat.eu), Helmholtz Association under the framework of the Helmholtz Artificial Intelligence Cooperation Unit–Local Unit “Munich Unit @Aeronautics, Space and Transport (MASTr),” and Helmholtz Excellent Professorship “Data Science in Earth Observation – Big Data Fusion for Urban Research and by the German Federal Ministry of Education and Research (BMBF) in the framework of the international future AI lab "AI4EO – Artificial Intelligence for Earth Observation: Reasoning, Uncertainties, Ethics and Beyond" (Grant number: 01DD20001). Additionally, Sugandha Doda is supported by the Helmholtz Association under the joint research school “Munich School for Data Science - MUDS”
 
 ## Description of the folders and files
 ### Folder Structure
@@ -47,7 +48,8 @@ and population count) in separate CSV file for each city.
 
 Pixel size for tif file is: 10m by 10m
 
-data_preprocessing.py: For each city folder creates a city_name_features.csv file, which is used for training
+Other files:
+ <br /> data_preprocessing.py: For each city folder creates a city_name_features.csv file, which is used for training
  <br /> rf_classification.py: Random forest classification implementation
  <br /> rf_regression.py: Random forest regression implementation
 
