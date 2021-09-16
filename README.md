@@ -15,9 +15,10 @@ https://latex.tum.de/7536525428cwvgtrcyrjds
 ### Technical University of Munich:
 First version:
 ```
-This is the first version of the So2Sat POP dataset covering 106 EU cities. It provides training/testing data split scenarios:
+This is the first version of the So2Sat POP dataset covering 106 EU cities. 
+It provides training/testing data split scenarios.
 Randomly selected: 80% as train-set (80 cities) / 20% as test-set (26 cities)
-DOI
+DOI: 
 ```
 
 ## Institute
