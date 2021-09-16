@@ -151,7 +151,7 @@ def rf_classifier(file_name, ground_truth_col):
 
     # Calculating the metrics
     print('Calculating the metrics...')
-    validation_csv_path = os.path.join(model_folder, '%s_validation.csv' % model_name)
+    validation_log_path = os.path.join(model_folder, '%s_validation_log.txt' % model_name)
     classes = set(y_test)
-    validation_cls(classes, pred_csv_path, validation_csv_path)
+    validation_cls(classes, pred_csv_path, validation_log_path)
     print('Finished classification \n \n')
