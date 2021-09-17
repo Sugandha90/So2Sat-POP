@@ -29,7 +29,8 @@ This research was funded by the European Research Council (ERC) under the Europe
 
 ## Description of the folders and files
 ### Folder Structure
-![folder_structure](https://user-images.githubusercontent.com/61827990/133273525-7dfe0edb-e792-4915-936c-33cbd0e43822.PNG)
+![dataset](https://user-images.githubusercontent.com/61827990/133801939-eabd723f-4da7-4e3a-818f-badde7b85708.PNG)
+
 
 train folder: 
 ```
