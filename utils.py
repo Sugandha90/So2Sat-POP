@@ -100,16 +100,16 @@ def plot_normalized_confusion_matrix(cm, class_names, cm_path):
     return figure
 
 
-def validation_cls(classes, pred_csv_path, validation_csv_path):
+def validation_cls(classes, pred_csv_path, validation_log_path):
     """
     :param pred_csv_path: path to saved csv file that contains predictions
-    :param validation_csv_path:  path to saved csv file that contains validation metrics
+    :param validation_log_path:  path to saved log file that contains validation metrics
     :return: Calculates the validation metrics and creates the validation log
     """
     df = pd.read_csv(pred_csv_path)
     val_targ = df['Reference']
     val_predict = df['Prediction']
-    output_log_validation = validation_csv_path.replace('.csv', '_log.txt')
+
     val_f1_micro = round(f1_score(val_targ, val_predict, average='micro'), 4)
     val_recall_micro = round(recall_score(val_targ, val_predict, average='micro'), 4)
     val_precis_micro = round(precision_score(val_targ, val_predict, average='micro'), 4)
@@ -120,8 +120,8 @@ def validation_cls(classes, pred_csv_path, validation_csv_path):
     accuracy = accuracy_score(val_targ, val_predict)
     balanced_accuracy = balanced_accuracy_score(val_targ, val_predict)
     classwise_accuracy = confusion_matrix(val_targ, val_predict, normalize="true").diagonal()
-    print("Please check log at {}  \n".format(output_log_validation))
-    with open(output_log_validation, 'a') as f:
+    print("Please check log at {}  \n".format(validation_log_path))
+    with open(validation_log_path, 'a') as f:
         f.writelines(
             "Evaluation metrics on test data \n F1_macro: {} \n F1_micro: {} \n Precision_macro: {} \n "
             "Precision_micro: {} \n Recall_macro: {} \n Recall_micro: {} \n Accuracy: {}"
@@ -130,8 +130,8 @@ def validation_cls(classes, pred_csv_path, validation_csv_path):
                                                                                  val_recall_macro, val_recall_micro,
                                                                                  accuracy, balanced_accuracy,
                                                                                  classwise_accuracy))
-    cm_path = validation_csv_path.replace('_validation.csv', '_cm.png')
-    norm_cm_path = validation_csv_path.replace('_validation.csv', '_cm_norm.png')
+    cm_path = validation_log_path.replace('_validation_log.txt', '_cm.png')
+    norm_cm_path = validation_log_path.replace('_validation_log.txt', '_cm_norm.png')
     # print(classification_report(val_targ, val_predict))
 
     labels = sorted(classes)
