@@ -1,7 +1,7 @@
 # contains reusable helper functions
 import itertools
 
-from sklearn.metrics import classification_report, precision_score, f1_score, recall_score, confusion_matrix, \
+from sklearn.metrics import precision_score, f1_score, recall_score, confusion_matrix, \
     balanced_accuracy_score, accuracy_score
 
 import numpy as np
