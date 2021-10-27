@@ -16,9 +16,11 @@ https://latex.tum.de/7536525428cwvgtrcyrjds
 First version:
 ```
 This is the first version of the So2Sat POP dataset covering 106 EU cities. 
-It provides training/testing data split scenarios.
-Randomly selected: 80% as train-set (80 cities) / 20% as test-set (26 cities)
-DOI: 
+The data set has two parts. Each part can be downloaded using the following links:
+So2Sat POP Part1 DOI:
+So2Sat POP Part2 DOI:
+Data set provides the predefined train/test split.
+Randomly selected: 80% as train (80 cities) / 20% as test (26 cities)
 ```
 
 ## Institute
@@ -29,29 +31,66 @@ This research was funded by the European Research Council (ERC) under the Europe
 
 ## Description of the folders and files
 ### Folder Structure
-![dataset](https://user-images.githubusercontent.com/61827990/133801939-eabd723f-4da7-4e3a-818f-badde7b85708.PNG)
+![folder_structure_new](https://user-images.githubusercontent.com/61827990/138909117-511e66b9-76bb-4851-a11c-e46b0ff68630.PNG)
 
+
+### So2Sat POP Part1
 
 train folder: 
 ```
-training data folder contains 80 cities and each city folder has patches from sentinel-2 (sen2), local climate zone 
-(lcz), digital elevation model, viirs nightlights (viirs), land use classifications (lu), open source maps (osm), 
-osm based features in Comma Separated Value (CSV) files (osm_features) and corresponding labels(population class 
-and population count) in separate CSV file for each city.
+training data folder contains 80 cities and each city folder has patches from sentinel-2 (sen2_rgb_autumn, sen2_rgb_spring, 
+sen2_rgb_summer, sen2_rgb_winter), local climate zone (lcz), viirs nightlights (viirs), land use classifications (lu), 
+open source maps (osm), osm based features in Comma Separated Value (CSV) files (osm_features) and 
+corresponding labels(population class and population count) in a separate CSV file for each city.
 ```
 
 test folder: 
 ```
 test data folder contains 26 cities and each city folder has patches from sentinel-2 (sen2), local climate zone 
-(lcz), digital elevation model, viirs nightlights (viirs), land use classifications (lu), open source maps (osm), 
+(lcz), viirs nightlights (viirs), land use classifications (lu), open source maps (osm), 
 osm based features in Comma Separated Value (CSV) files (osm_features) and corresponding labels(population class 
 and population count) in separate CSV file for each city.
+```
+### So2Sat POP Part2
+train folder:
+```
+training data folder contains 80 cities and each city folder has patches from only digital elevation model (dem).
+```
+
+train folder:
+```
+test data folder contains 26 cities and each city folder has patches from only digital elevation model (dem).
 ```
 
 Pixel size for tif file is: 10m by 10m
 
-Other files:
- <br /> data_preprocessing.py: For each city folder creates a city_name_features.csv file, which is used for training
- <br /> rf_classification.py: Random forest classification implementation
- <br /> rf_regression.py: Random forest regression implementation
+### Dependencies
 
+Create a conda environment with python 3.7
+
+
+Packages:
+```
+joblib==1.0.1
+matplotlib==3.4.2
+numpy==1.21.2
+opencv-python==4.5.3.56
+pandas==1.1.3
+scikit-learn==1.0
+scipy==1.7.1
+```
+
+Please note that to install rasterio and GDAL, download the binary wheels for your system (rasterio and GDAL). Run from the downloads folder.
+```
+pip install GDAL-3.2.3-cp37-cp37m-win_amd64.whl 
+pip install rasterio-1.2.3-cp37-cp37m-win_amd64.whl
+```
+
+Download the data and run the following scripts:
+```
+demo_data_loader.py: Sample code to load all the patches for a data folder and their corresponding labels. 
+data_preprocessing.py: For each city folder creates a city_name_features.csv file in So2Sat POP Part1 folder, used for RF training.
+rf_regression.py: Random forest regression implementation to predict the population count and and evaluate on test cities.
+rf_classification.py: Random forest classification implementation to predict the population class and evaluate on test cities.
+
+```
