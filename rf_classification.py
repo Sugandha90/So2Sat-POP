@@ -10,7 +10,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_selection import SelectFromModel
 from sklearn.model_selection import GridSearchCV
 
-from constants import all_patches_mixed_train, all_patches_mixed_test, min_fimportance, kfold, n_jobs, param_grid, \
+from constants import all_patches_mixed_train_part1, all_patches_mixed_test_part1, min_fimportance, kfold, n_jobs, param_grid, \
     covariate_list, current_dir_path
 from utils import plot_feature_importance, validation_cls
 
@@ -23,7 +23,7 @@ def rf_classifier(file_name, ground_truth_col):
     """
     print("Starting classification")
     # get all training cities
-    all_train_cities = glob.glob(os.path.join(all_patches_mixed_train, '*'))
+    all_train_cities = glob.glob(os.path.join(all_patches_mixed_train_part1, '*'))
     # prepare the training dataframe
     training_df = pd.DataFrame()
     for each_city in all_train_cities:
@@ -112,7 +112,7 @@ def rf_classifier(file_name, ground_truth_col):
 
     # Start the predictions on completely unseen test data set
     print("Starting testing...\n")
-    all_test_cities = glob.glob(os.path.join(all_patches_mixed_test, '*'))   # get all test cities
+    all_test_cities = glob.glob(os.path.join(all_patches_mixed_test_part1, '*'))   # get all test cities
     test_df = pd.DataFrame()
     for each_test_city in all_test_cities:
         test_city_csv = glob.glob(os.path.join(each_test_city, '*_features.csv'))[0]  # get the feature csv
