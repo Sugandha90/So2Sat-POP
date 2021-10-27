@@ -5,9 +5,19 @@ import os
 if os.name == "nt":  # locally
     current_dir_path = os.getcwd()
 
-all_patches_mixed = os.path.join(current_dir_path, 'so2sat_pop_sample_data')  # base folder, path to So2Sat POP data folder
-all_patches_mixed_train = os.path.join(all_patches_mixed, 'train')   # path to train folder
-all_patches_mixed_test = os.path.join(all_patches_mixed, 'test')   # path to test folder
+img_rows = 100  # patch height
+img_cols = 100  # patch width
+osm_features = 56  # number of osm based features
+
+# paths to So2Sat POP Part1 folder
+all_patches_mixed_part1 = os.path.join(current_dir_path, 'So2Sat POP Part1')  # path to So2Sat POP Part 1 data folder
+all_patches_mixed_train_part1 = os.path.join(all_patches_mixed_part1, 'train')   # path to train folder
+all_patches_mixed_test_part1 = os.path.join(all_patches_mixed_part1, 'test')   # path to test folder
+
+# paths to So2Sat POP Part2 folder
+all_patches_mixed_part2 = os.path.join(current_dir_path, 'So2Sat POP Part2')  # path to So2Sat POP Part 2 data folder
+all_patches_mixed_train_part2 = os.path.join(all_patches_mixed_part2, 'train')   # path to train folder
+all_patches_mixed_test_part2 = os.path.join(all_patches_mixed_part2, 'test')   # path to test folder
 
 # covariates used to train the model
 covariate_list = ['DEM_MEAN', 'DEM_MAX', 'LCZ_CL', 'LU_1_A', 'LU_2_A', 'LU_3_A', 'LU_4_A', 'VIIRS_MEAN', 'VIIRS_MAX',
@@ -45,4 +55,4 @@ param_grid = {'oob_score': [True], 'bootstrap': [True],
 
 # Kfold parameter
 kfold = 10
-n_jobs = 15
+n_jobs = -1
