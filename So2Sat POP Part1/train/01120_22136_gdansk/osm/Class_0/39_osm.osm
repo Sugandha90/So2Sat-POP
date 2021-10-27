@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version="0.6" generator="osmium/1.10.0">
+  <node id="394910924" version="5" timestamp="2016-11-29T17:34:39Z" uid="1420318" user="4b696d" changeset="44039309" lat="54.4115387" lon="18.6596994"/>
+  <node id="800143447" version="4" timestamp="2014-10-05T05:18:07Z" uid="729745" user="wojtas82" changeset="25865555" lat="54.5966836" lon="18.7987808"/>
+  <node id="800143478" version="3" timestamp="2012-09-13T23:41:11Z" uid="467703" user="Zibior2" changeset="13102209" lat="54.4536342" lon="18.6847141"/>
+  <node id="800143526" version="6" timestamp="2014-10-05T05:27:50Z" uid="729745" user="wojtas82" changeset="25865633" lat="54.6007982" lon="18.8002059"/>
+  <node id="800143540" version="2" timestamp="2016-06-02T15:08:24Z" uid="1850877" user="d_m_at" changeset="39739376" lat="54.4181656" lon="18.6538965"/>
+  <node id="800143563" version="3" timestamp="2012-09-13T23:41:11Z" uid="467703" user="Zibior2" changeset="13102209" lat="54.5390393" lon="18.7560082"/>
+  <node id="800143568" version="3" timestamp="2012-09-13T23:41:11Z" uid="467703" user="Zibior2" changeset="13102209" lat="54.5106363" lon="18.7315376"/>
+  <node id="3112154610" version="2" timestamp="2014-10-05T05:27:50Z" uid="729745" user="wojtas82" changeset="25865633" lat="54.5991002" lon="18.8006744"/>
+  <node id="3112154613" version="1" timestamp="2014-10-05T05:18:06Z" uid="729745" user="wojtas82" changeset="25865555" lat="54.6004397" lon="18.8005021"/>
+  <node id="3112174474" version="1" timestamp="2014-10-05T05:27:49Z" uid="729745" user="wojtas82" changeset="25865633" lat="54.5985219" lon="18.8003412"/>
+  <node id="3112174481" version="1" timestamp="2014-10-05T05:27:49Z" uid="729745" user="wojtas82" changeset="25865633" lat="54.5997098" lon="18.800693"/>
+  <node id="3112174482" version="1" timestamp="2014-10-05T05:27:49Z" uid="729745" user="wojtas82" changeset="25865633" lat="54.6006315" lon="18.8003994"/>
+  <node id="3112174485" version="1" timestamp="2014-10-05T05:27:49Z" uid="729745" user="wojtas82" changeset="25865633" lat="54.6009255" lon="18.7999379"/>
+  <node id="3112174487" version="1" timestamp="2014-10-05T05:27:49Z" uid="729745" user="wojtas82" changeset="25865633" lat="54.6010029" lon="18.799618"/>
+  <node id="4961629585" version="1" timestamp="2017-07-10T10:54:19Z" uid="486380" user="szutkes" changeset="50173053" lat="54.4098087" lon="18.6606719"/>
+  <node id="4977135475" version="4" timestamp="2021-02-23T21:55:44Z" uid="2098272" user="maraf24" changeset="99856802" lat="54.6010247" lon="18.7992778">
+    <tag k="amenity" v="ferry_terminal"/>
+  </node>
+  <way id="119446558" version="9" timestamp="2017-07-18T10:32:29Z" uid="4493657" user="Aim311" changeset="50375447">
+    <nd ref="4977135475"/>
+    <nd ref="3112174487"/>
+    <nd ref="3112174485"/>
+    <nd ref="800143526"/>
+    <nd ref="3112174482"/>
+    <nd ref="3112154613"/>
+    <nd ref="3112174481"/>
+    <nd ref="3112154610"/>
+    <nd ref="3112174474"/>
+    <nd ref="800143447"/>
+    <nd ref="800143563"/>
+    <nd ref="800143568"/>
+    <nd ref="800143478"/>
+    <nd ref="800143540"/>
+    <nd ref="394910924"/>
+    <nd ref="4961629585"/>
+    <tag k="name" v="Gdańsk - Hel"/>
+    <tag k="route" v="ferry"/>
+  </way>
+  <relation id="2951268" version="11" timestamp="2019-07-23T08:12:39Z" uid="4052940" user="kasmar00" changeset="72544499">
+    <member type="way" ref="179647828" role=""/>
+    <member type="way" ref="222534381" role=""/>
+    <member type="way" ref="286669662" role=""/>
+    <member type="way" ref="286667191" role=""/>
+    <member type="way" ref="286669660" role=""/>
+    <member type="way" ref="286667192" role=""/>
+    <member type="way" ref="286667194" role=""/>
+    <member type="way" ref="222534380" role=""/>
+    <member type="way" ref="506427108" role=""/>
+    <member type="way" ref="706587329" role=""/>
+    <member type="way" ref="119446558" role=""/>
+    <tag k="name" v="Gdańsk - Hel"/>
+    <tag k="name:de" v="Danzig - Hela"/>
+    <tag k="name:pl" v="Gdańsk - Hel"/>
+    <tag k="operator" v="Żegluga Gdańska"/>
+    <tag k="ref" v="Gdańsk - Hel"/>
+    <tag k="route" v="ferry"/>
+    <tag k="type" v="route"/>
+    <tag k="website" v="https://www.zegluga.pl/"/>
+  </relation>
+</osm>
