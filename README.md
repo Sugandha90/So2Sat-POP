@@ -1,7 +1,7 @@
 # So2Sat-POP
 
-## Visualization of the sample patches
-![Upto_class13_patch_new](https://user-images.githubusercontent.com/61827990/133273367-bc32ea0c-0164-4aa1-bd21-62d2dc3fcaba.PNG)
+## Visualization of the sample pat
+![Upto_class13_patch_example](https://user-images.githubusercontent.com/61827990/140515202-172ea74d-fea0-42bf-833d-2ba6300b9f11.PNG)
 
 Sample patches from the odd numbered classes of our dataset. Lower classes depicts sparsely populated areas while higher classes depicts densely populated areas.
 
