@@ -15,7 +15,7 @@ https://latex.tum.de/7536525428cwvgtrcyrjds
 ### Technical University of Munich:
 First version:
 ```
-This is the first version of the So2Sat POP dataset covering 106 EU cities. 
+This is the first version of the So2Sat POP dataset covering 98 EU cities. 
 The data set has two parts. Each part can be downloaded using the following links:
 So2Sat POP Part1 DOI:
 So2Sat POP Part2 DOI:
